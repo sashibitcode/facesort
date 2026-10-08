@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141416" />
+      <stop offset="100%" stop-color="#0A0A0B" />
+    </linearGradient>
+    <linearGradient id="mintGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F5A0" />
+      <stop offset="100%" stop-color="#00C875" />
+    </linearGradient>
+    <filter id="mintGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Dark Rounded Squircle Base -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#bgGrad)" stroke="#00F5A0" stroke-opacity="0.4" stroke-width="2" />
+
+  <!-- AI Face Scanning Corner Brackets & Face -->
+  <g stroke="url(#mintGrad)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" filter="url(#mintGlow)">
+    <!-- Top-Left Bracket -->
+    <path d="M15 24V18C15 16.343 16.343 15 18 15H24" />
+    <!-- Top-Right Bracket -->
+    <path d="M40 15H46C47.657 15 49 16.343 49 18V24" />
+    <!-- Bottom-Left Bracket -->
+    <path d="M15 40V46C15 47.657 16.343 49 18 49H24" />
+    <!-- Bottom-Right Bracket -->
+    <path d="M40 49H46C47.657 49 49 47.657 49 46V40" />
+
+    <!-- Center Facial Features -->
+    <circle cx="26" cy="27" r="2.2" fill="#00F5A0" stroke="none" />
+    <circle cx="38" cy="27" r="2.2" fill="#00F5A0" stroke="none" />
+    <path d="M32 30V34" />
+    <path d="M26 40C28 42.2 30.2 43 32 43C33.8 43 36 42.2 38 40" />
+  </g>
+</svg>
